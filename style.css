@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+.information-box {
+  background-color: blue;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px 50px;
+  width: calc(100% - 100px);
+}
+.information-box .information-box__image {
+  width: 300px;
+  height: 300px;
+}
+.information-box .information-box__container {
+  background-color: white;
+  margin: 10px;
+  max-width: 500px;
+  border-radius: 20px;
+  text-align: center;
+}
+.information-box .information-box__container__button {
+  background-color: #00a5f0;
+  text-transform: uppercase;
+  min-width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
