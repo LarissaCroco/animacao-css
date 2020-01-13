@@ -1,20 +1,56 @@
+@font-face {
+    font-family: "Lari";
+    src: url("./roboto/Roboto-Regular.ttf") format("ttf");
+  }
+
+
 body{
     margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: #2D3C46;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+p{
+    color: #2D3C46;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.container{
+    max-width: 1140px;
 }
 
 .information-box{
     $i: &;
     background-color: rgb(4, 158, 247);
     margin-top: 200px;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin: 0px 50px;
-    width: calc(100% - 100px);
+    padding: 60px;
 
+    /* max-width */
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+    
     #{$i}__image{
         width: 300px;
         height: 300px;
+
+        @media screen and (max-width: 900px) {
+           margin-bottom: 20px;
+        }
     }
 
     #{$i}__container{
@@ -22,19 +58,25 @@ body{
         margin:10px;
         max-width: 500px;
         border-radius: 20px;
-        text-align: center;
+        text-align: left;
+        font-family: 'Lari', sans-serif;
+        padding: 40px;
      
         &__button{
-            background-color: #00a5f0;
+            background-color: #ffc800;
             text-transform: uppercase;
             min-width: 150px;
             padding: 10px;
             border: none;
             border-radius: 17px;
             cursor: pointer;
-            font-size: 15px;
+            font-size: 16px;
             color: white;
             margin-top: 15px;
+
+            @media screen and (max-width: 900px) {
+                min-width: 100%;
+            }
         }
     }
 }
