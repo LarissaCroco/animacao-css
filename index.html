@@ -7,11 +7,42 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <title>Document</title>
+
 </head>
-<body>
+<body id="body"> 
+    
     <div class="container">
         <div class="information-box"> 
-            <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/baby-shark-png-01.png" alt="#" class="information-box__image">
+            <div onmouseover="audio.play()" allow="autoplay" class="information-box__image"> 
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/baby-shark-png-01.png" alt="#" class="image">  
+                
+                <span class="volume-button">
+                    <img src="./images/mute.svg" alt="">
+                </span>
+            </div>
+            
+            <div class="information-box__container">
+               <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Cras eu lacus consectetur, pulvinar orci eu, imperdiet lorem.
+                    In quis tempus augue, quis tempus turpis. 
+                    Nullam sed velit vitae leo blandit tempus.
+                </p>
+                <button id="elementoTeste" type="button" class="button button--yellow" onclick="teste()">
+                    Lorem ipsum
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="information-box information-box--blue information-box--reverse"> 
+            <div onmouseover="audio.play()" allow="autoplay" class="information-box__image"> 
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/grandma-shark-png-01.png" alt="#" class="image">
+                <span class="volume-button">
+                    <img src="./images/mute.svg" alt="">
+                </span>
+            </div>
     
             <div class="information-box__container">
                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
@@ -20,12 +51,42 @@
                     In quis tempus augue, quis tempus turpis. 
                     Nullam sed velit vitae leo blandit tempus.
                 </p>
-                <button type="button" class="information-box__container-button">
+                <button type="button" class="button button--pink">
                     Lorem ipsum
                 </button>
-    
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="information-box information-box--green"> 
+            <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/daddy-shark-png-01.png" alt="#" class="image">
+    
+            <div class="information-box__container">
+               <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Cras eu lacus consectetur, pulvinar orci eu, imperdiet lorem.
+                    In quis tempus augue, quis tempus turpis. 
+                    Nullam sed velit vitae leo blandit tempus.
+                </p>
+                <button type="button" class="button">
+                    Lorem ipsum
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function teste(){
+           console.log("teste");
+        }
+        window.onload = function() {
+            document.getElementById("elementoTeste").click();
+        }
+        var audio = new Audio('./babyshark-acustico.m4a');
+        audio.autoplay = true; 
+        audio.playsinline = true;  
+        audio.muted = true;
+   </script>
 </body>
 </html>
