@@ -6,19 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Baby Shark</title>
 
 </head>
 <body id="body"> 
-    
+    <audio id="audio" allow="autoplay" src="./babyshark-acustico.m4a"></audio>
     <div class="container">
         <div class="information-box"> 
-            <div onmouseover="audio.play()" allow="autoplay" class="information-box__image"> 
-                <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/baby-shark-png-01.png" alt="#" class="image">  
-                
-                <span class="volume-button">
-                    <img src="./images/mute.svg" alt="">
-                </span>
+            <div  class="information-box__image"> 
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/baby-shark-png-01.png" alt="ilustracao de um tubarao amarelo" class="image">  
             </div>
             
             <div class="information-box__container">
@@ -28,7 +25,7 @@
                     In quis tempus augue, quis tempus turpis. 
                     Nullam sed velit vitae leo blandit tempus.
                 </p>
-                <button id="elementoTeste" type="button" class="button button--yellow" onclick="teste()">
+                <button id="elementoTeste" type="button" class="button button--yellow">
                     Lorem ipsum
                 </button>
             </div>
@@ -37,13 +34,7 @@
 
     <div class="container">
         <div class="information-box information-box--blue information-box--reverse"> 
-            <div onmouseover="audio.play()" allow="autoplay" class="information-box__image"> 
-                <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/grandma-shark-png-01.png" alt="#" class="image">
-                <span class="volume-button">
-                    <img src="./images/mute.svg" alt="">
-                </span>
-            </div>
-    
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/grandma-shark-png-01.png" alt="ilustracao de um tubarao rosa usando oculos" class="image">
             <div class="information-box__container">
                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -60,14 +51,13 @@
 
     <div class="container">
         <div class="information-box information-box--green"> 
-            <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/daddy-shark-png-01.png" alt="#" class="image">
-    
+             <img src="https://imagensemoldes.com.br/wp-content/uploads/2019/10/daddy-shark-png-01.png" alt="ilustracao de um tubarao azul" class="image">
             <div class="information-box__container">
-               <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Cras eu lacus consectetur, pulvinar orci eu, imperdiet lorem.
-                    In quis tempus augue, quis tempus turpis. 
-                    Nullam sed velit vitae leo blandit tempus.
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Cras eu lacus consectetur, pulvinar orci eu, imperdiet lorem.
+                In quis tempus augue, quis tempus turpis. 
+                Nullam sed velit vitae leo blandit tempus.
                 </p>
                 <button type="button" class="button">
                     Lorem ipsum
@@ -75,18 +65,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function teste(){
-           console.log("teste");
-        }
-        window.onload = function() {
-            document.getElementById("elementoTeste").click();
-        }
-        var audio = new Audio('./babyshark-acustico.m4a');
-        audio.autoplay = true; 
-        audio.playsinline = true;  
-        audio.muted = true;
-   </script>
 </body>
 </html>

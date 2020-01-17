@@ -69,11 +69,6 @@ p{
     margin: 0px 50px;
     padding: 60px;
     position: relative;
-
-    /* max-width */
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
-    }
     
     #{$i}__image{
         position: relative;
@@ -99,6 +94,12 @@ p{
 
     &--reverse{
         flex-direction: row-reverse;
+    }
+
+    
+    /* max-width */
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
     }
 
 }
