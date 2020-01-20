@@ -60,7 +60,7 @@ p{
 
 .information-box{
     $i: &;
-    background-color: #0073cd;
+    background-color: #00a5f0;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -85,11 +85,11 @@ p{
     }
 
     &--blue{
-        background-color: #00a5f0;
+        background-color: #00d7d7;
     }
 
     &--green{
-        background-color: #00d7d7;
+        background-color: #00a0a0;
     }
 
     &--reverse{
@@ -149,10 +149,10 @@ p{
 
 }
 
-.volume-button{
-    background-color: rgba(204, 204, 204, 0.5);
-    width: 25px;
-    height: 25px;
+.audio-button{
+    
+    width: 35px;
+    height: 35px;
     position: absolute;
     transform: unset;
     cursor: pointer;
