@@ -24,3 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 });
+
+var array = [
+    0, 1, 2
+];
+
+array[1].src
