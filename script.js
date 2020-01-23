@@ -6,27 +6,18 @@ document.addEventListener('DOMContentLoaded', function() {
     var audioButton = document.getElementsByClassName('audio-button');
 
     Array.from(audioButton).forEach(btn => {
-        btn.addEventListener('click', playAudio, false);
+        btn.addEventListener('click', playAudio.bind(this, btn));
     })
  
-    function playAudio(){
-        Array.from(audioButton).forEach(btn => {
-            console.log(btn.src);
-            console.log(btn.src.includes("pause-button.svg"));
+    function playAudio(button){
+        console.log('button => ', button);
 
-            if(btn.src.includes("play-button.svg")){
-                btn.src = "./images/pause-button.svg";
-                audio.play();
-            } else{
-                btn.src = "./images/play-button.svg";
-                audio.pause();
-            }
-        })
+        if(button.src.includes("play-button.svg")){
+            button.src = "./images/pause-button.svg";
+            audio.play();
+        } else{
+            button.src = "./images/play-button.svg";
+            audio.pause();
+        }
     }
 });
-
-var array = [
-    0, 1, 2
-];
-
-array[1].src

@@ -1,0 +1,29 @@
+
+@keyframes button-bouncing {
+    0% {
+      transform: scale(.9);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%   { transform: rotate(0deg) }
+    10%  { transform: rotate(-10deg) }
+    20%  { transform: rotate(10deg) }
+    30%  { transform: rotate(-10deg) }
+    40%  { transform: rotate(10deg) }
+    50% { transform: rotate(-10deg) }
+    60%  { transform: rotate(10deg) }
+    70%  { transform: rotate(-10deg) }
+    80%  { transform: rotate(10deg) }
+    90% { transform: rotate(-10deg) }
+    100% { transform: rotate(0deg) }
+}
